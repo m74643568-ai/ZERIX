@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerix</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #242424);
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 35px;
+            background: rgba(0,0,0,0.35);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            opacity: 0.6;
+        }
+
+        /* زرار login */
+        .login-btn {
+            padding: 10px 22px;
+            background: #4a4aff;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #6d6dff;
+        }
+
+        /* First screen */
+        .hero {
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+
+        .start-btn {
+            margin-top: 35px;
+            padding: 14px 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            background: #4a4aff;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .start-btn:hover {
+            background: #6d6dff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">ZERIX</div>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Explore</a>
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Zerix</h1>
+        <p>The Future of Social Communication Starts Here.</p>
+
+        <a href="#" class="start-btn">Get Started</a>
+    </div>
+
+</body>
+</html>
