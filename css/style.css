@@ -69,3 +69,51 @@ body {
   color: #00eaff;
   text-decoration: none;
 }
+/* login + signup forms */
+.container {
+    width: 90%;
+    max-width: 350px;
+    margin: 80px auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    background: #00b4ff;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.link a {
+    color: #00b4ff;
+}
+
+/* profile page */
+.profile-card {
+    margin: 60px auto;
+    width: 90%;
+    max-width: 400px;
+    background: #222;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 120px;
+    margin-bottom: 15px;
+}
