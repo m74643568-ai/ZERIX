@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <h3>Chat</h3>
+  <p>Select a user to chat with:</p>
+  <ul>
+    {% for u in users %}
+      <li><a href="/chat/{{ u['id'] }}">{{ u['username'] }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

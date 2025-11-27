@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <h3>{{ user['username'] }}</h3>
+  <p>{{ user['email'] }}</p>
+</div>
+
+<div class="feed">
+  <h4>Your posts</h4>
+  {% for p in posts %}
+    <article class="post">
+      <div class="post-text">{{ p['text'] }}</div>
+      {% if p['image'] %}
+        <img class="post-image" src="/uploads/{{ p['image'] }}">
+      {% endif %}
+      <div class="time">{{ p['created_at'] }}</div>
+    </article>
+  {% else %}
+    <p>No posts yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

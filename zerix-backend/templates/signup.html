@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="card">
-  <h3>Login</h3>
+  <h3>Sign Up</h3>
   <form method="POST">
+    <input name="username" placeholder="Username" required>
     <input name="email" placeholder="Email" required>
     <input name="password" placeholder="Password" type="password" required>
-    <button type="submit">Login</button>
+    <button type="submit">Create Account</button>
   </form>
 </div>
 {% endblock %}

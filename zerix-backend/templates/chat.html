@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <h3>Chat with {{ other['username'] }}</h3>
+
+  <div class="messages" id="msgs" style="max-height: 50vh; overflow:auto; border:1px solid #ddd; padding:10px;">
+    {% for m in messages %}
+      <div class="msg {% if m['from_user'] == user['id'] %}mine{% else %}other{% endif %}">
+        <small>{{ m['created_at'] }}</small>
+        <p>{{ m['text'] }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+  <form method="POST" style="margin-top:10px;">
+    <input name="text" placeholder="Write a message..." style="width:80%" required>
+    <button type="submit">Send</button>
+  </form>
+</div>
+{% endblock %}
